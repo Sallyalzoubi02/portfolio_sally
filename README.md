@@ -7,3 +7,7 @@ https://www.figma.com/design/o03WMspx6bNV4D7NxJFuPK/Portfolio?node-id=26-199&t=c
 
 # Live demo
 https://sallyalzoubi02.github.io/portfolio_sally/
+
+# screenshot
+
+<img src="s1.png">
