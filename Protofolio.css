@@ -1,0 +1,287 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=DM+Serif+Text:ital@0;1&family=Lora:ital,wght@0,400..700;1,400..700&family=Playwrite+DE+VA+Guides&family=Playwrite+TZ+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Bitter;
+}
+body{
+    background-color: rgb(206, 206, 206);
+    overflow-x: hidden; /* Avoid horizontal scroll issues */
+}
+/*-------------------- navbar -------------------*/
+.navbar {
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 1030;
+    box-shadow: 0 1px 10px black;
+    
+}
+
+.navbar-toggler-icon ,.navbar-toggler ,.nav-link {
+    color: white !important;
+    font-family: Bitter !important;
+}
+.navbar-brand img{
+    width: 100%;
+    height: 55px;
+    margin: 0;
+}
+.navbar-toggler {
+    background-color: #1190cb;
+    
+}
+.btn-nav{
+    height: fit-content;
+    width: max-content;
+    padding: 1px 3px;
+    
+    font-family: Bitter;
+    font-size: 14px;
+}
+
+
+.btn-blu{
+    color: #2e2e2e;
+    background-color: #1190cb;
+}
+.btn-blu:hover{
+    color: white;
+    border: 1px solid white;
+    background-color: #2e2e2e;
+}
+
+.nav-link {
+    text-shadow: none; /* Default state */
+    text-decoration: none; /* Default state */
+}
+
+/* Active state when section is targeted */
+.nav-link.active {
+    text-shadow: 0px 0px 20px #1190cb; /* Active state */
+    text-decoration: underline 3px #1190cb; /* Active state */
+}
+/*-------------------- siction 1 -------------------*/
+section {
+    padding-top: 100px; /* Ensure content doesn't overlap with navbar */
+    padding-bottom: 100px;
+    min-height: 500px; /* Ensure sections have enough height for scrolling */
+    height: max-content;
+}
+.me{
+    padding-top: 200px;
+}
+.myName{
+    color: #1190cb;
+    font-family: Yellowtail;
+}
+.job{
+    font-size: 2rem !important;
+    
+}
+
+.orange{
+    color: #1190cb;
+}
+.orange:hover{
+    color: orangered;
+}
+
+.img1{
+    display: block;
+    max-width: 100%; /* Fix any potential stretching issues */
+    margin: 30px;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 50px #1190cb);
+}
+.quote{
+   
+    margin-top: 40px;
+    color: gray;
+    font-family: Orbitron;
+}
+#id{
+    height: 700px;
+}
+/*-------------------- card -------------------*/
+
+.c-c{
+    border-radius: 20px;
+    box-shadow: 1px 1px 15px #1190cb74;
+    
+    width: 80%;
+}
+.c-h{
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-b{
+    background-color: #212529;
+    color: white;
+    border-radius: 0 0 20px 20px;
+}
+
+.card-img{
+    width: 100%;
+    filter: drop-shadow(0 0 50px black);
+}
+
+#frame {
+    visibility:hidden;
+    height: 0;
+    overflow: hidden;
+    transition: visibility 0.3s ease, height 0.3s ease;
+}
+
+#frame:target {
+    visibility: visible;
+    height: 400px;
+    box-shadow: 1px 1px 10px black;
+}
+
+/*-------------------- skills -------------------*/
+.box{
+    border-radius: 30px;
+    margin-bottom: 5px;
+    transition: transform ease-in .3s;
+    min-height: 136px;
+}
+.box:hover{
+    transform: scale(1.1);
+    border: 1px solid #1190cb;
+}
+.icon i ,.contant h5{
+    color: #1190cb;
+}
+
+/*-------------------- Course ---------------------*/
+
+.c{
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.c a{
+    text-decoration: none;
+}
+.course{
+    border-radius: 30px !important;
+    margin-bottom: 5px;
+    transition: transform ease-in .3s;
+    text-decoration: none !important;
+    display: flex;
+    align-items: center;
+}
+.course-con{
+    text-decoration: none !important;
+    color: white;
+    padding: 10px;
+}
+.course-con h5{
+    color: #1190cb;
+}
+.course-icon img{
+    width: 70%;
+}
+/*-------------------refer---------------------*/
+.c1 a{
+    text-decoration: none !important;
+}
+.card-ref{
+    border-radius: 20px;
+    box-shadow: 1px 1px 15px #1190cb74;
+    margin: 20px;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0) !important;
+    border-radius: 40%;
+    
+}
+
+.ref-header{
+    background-color:#212524;
+    border: 0;
+    padding: 0;
+   
+}
+.ref-header img{
+    width:100%;
+    filter: none;
+    border-radius: 2% 2% 0 0;
+    
+}
+
+.ref-body{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0) !important;
+    min-height: 124.8px;
+    
+}
+
+.ref-body h5{
+    color:#1190cb;
+    
+}
+
+/*-------------------- Form ---------------------*/
+.feild{
+    margin-bottom:20px;
+    margin-top:20px;
+    text-align: left;
+    display: flex;
+    justify-content: start;
+}
+label{
+    font-size: 18px;
+    font-weight: 500;
+}
+input{
+    width: 60%;
+    margin-left: 32px;
+}
+textarea{
+    width: 60%;
+    margin-left: 11px;
+}
+.social{
+    margin-bottom: 30px;
+}
+.ic{
+    font-size: 25px;
+    color: #1190cb;
+
+}
+.ic h6{
+    display: inline;
+    color:#2e2e2e;
+    margin: 5px;
+    font-size: 16px;
+}
+.sendcont{
+    position: relative;
+    right: 25%;
+    justify-content: end;
+}
+/*-------------------- Footer ---------------------*/
+.fo i{
+    color: aliceblue;
+    text-shadow: 0px 0px 20px #1190cb;
+}
+.footer a{
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 300;
+}
+footer {
+    height: max-content;
+    padding: 20px;
+}
+.footer-img{
+    border-radius: 0;
+    filter: none;
+    width: 50%;
+}
+

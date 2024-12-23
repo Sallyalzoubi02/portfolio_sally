@@ -1,0 +1,55 @@
+
+@media screen and (max-width: 426px) {
+    .me {
+        
+        padding-top: 120px;
+        
+    }
+    .order{
+        order: 2;
+    }
+    .cent{
+        display: flex;
+        justify-content: center;
+    }
+    .sect{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 24px;
+    }
+   
+    #reference .row , #Courses .row{
+        margin-right: 0 !important;
+    }
+
+    #reference{
+        padding-left: 26px;
+    }
+
+    .course-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .course-con{
+        text-align: center;
+    }
+
+    .sendcont{
+        right: 30%;
+    }
+
+    .footer-img{
+        padding-right: 33px;
+    }
+   
+    .soc{
+        align-items: center !important;
+    }
+
+
+    
+  }
