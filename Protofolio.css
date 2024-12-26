@@ -8,11 +8,11 @@
 }
 body{
     background-color: rgb(206, 206, 206);
-    overflow-x: hidden; /* Avoid horizontal scroll issues */
+    overflow-x: hidden; /* Avoid horizontal scroll issues --> fixed navbar can make a problems*/
 }
 /*-------------------- navbar -------------------*/
 .navbar {
-    position: fixed; 
+    position: fixed; /* sticky didnt work so use fixed and z-index */
     top: 0; 
     width: 100%; 
     z-index: 1030;
@@ -80,13 +80,16 @@ section {
 .job{
     font-size: 2rem !important;
     
+    
 }
 
 .orange{
     color: #1190cb;
+    text-decoration: none !important;
 }
 .orange:hover{
     color: orangered;
+    
 }
 
 .img1{
@@ -110,11 +113,11 @@ section {
 .c-c{
     border-radius: 20px;
     box-shadow: 1px 1px 15px #1190cb74;
-    
+    min-width: 455.2;
     width: 80%;
 }
 .c-h{
-    height: 12rem;
+    min-height: 12rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -124,11 +127,13 @@ section {
     background-color: #212529;
     color: white;
     border-radius: 0 0 20px 20px;
+    min-height: 261.6px;
 }
 
 .card-img{
     width: 100%;
-    filter: drop-shadow(0 0 50px black);
+    max-height: 12rem;
+    
 }
 
 #frame {
@@ -266,9 +271,17 @@ textarea{
     justify-content: end;
 }
 /*-------------------- Footer ---------------------*/
+.sociallink{
+    flex-direction: column;
+    display: flex;
+}
+.space .row{
+    margin-bottom: 5px;
+}
 .fo i{
     color: aliceblue;
     text-shadow: 0px 0px 20px #1190cb;
+    margin: 0;
 }
 .footer a{
     color: aliceblue;

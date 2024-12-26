@@ -19,6 +19,16 @@
         justify-content: center;
         margin-bottom: 24px;
     }
+    .sect .row h5{
+        margin-top: 10px !important;
+    }
+    .hor{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 24px;
+    }
    
     #reference .row , #Courses .row{
         margin-right: 0 !important;
@@ -49,7 +59,10 @@
     .soc{
         align-items: center !important;
     }
-
+    .cardc{
+        display: flex;
+    justify-content: center;
+    }
 
     
   }
