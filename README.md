@@ -10,4 +10,4 @@ https://sallyalzoubi02.github.io/portfolio_sally/
 
 # screenshot
 
-<img src="s1.png">
+<img src="s2.png">
